@@ -1,0 +1,13 @@
+def main()
+{
+move (up)
+write()
+move (down )
+   move(   left  )
+move (left)
+move (left)
+move (up)
+move (right)
+read()
+move(right)
+}

@@ -1,0 +1,37 @@
+
+def main()
+
+{
+moveTillDown()
+moveTillLeft()
+}
+
+def moveTillDown()
+{
+	if(isWall(Down))
+	{
+		return
+	}
+	else
+	{
+	move(Down)
+	write()
+	flipPassable()
+	moveTillDown()
+	}
+}
+
+
+def moveTillLeft()
+{
+	if(isWall(left))
+	{
+		return
+	}
+	else
+	{
+	move(left)
+	write()
+	moveTillLeft()
+	}
+}

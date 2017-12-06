@@ -1,0 +1,44 @@
+
+def main()
+
+
+
+{
+	write()
+	if (iswall(up))
+	
+	{
+		if (iswall(down))
+		{
+ 		move  ( right ) 
+		}
+		else
+		{
+		
+		move(down)
+		}
+	}
+	else
+	{
+		move(left)
+		fun()
+	}
+		move(up)
+}
+
+def fun()
+{
+	write()
+	move(right)
+	write()
+	flipPassable()
+	move(down)
+	if(isWall(right))
+	{
+		return
+	}
+	else
+	{
+		fun()
+	}
+}
